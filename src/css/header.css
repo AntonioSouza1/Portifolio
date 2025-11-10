@@ -1,0 +1,100 @@
+header{
+    background-color: var(--color-neutral-8);
+    box-shadow: 100px var(--color-neutral-8);
+    padding: 12px 4%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        
+        .logo{
+            width: auto;
+            font-size: 1.3rem;
+            color: var(--color-neutral-1);            
+        }
+
+        ul{
+            display: none;
+            list-style: none;
+            flex-direction: column;
+            gap: 0.5rem;
+            width: 100%;
+            position: absolute;
+            top: 50px;
+            background-color: var(--color-neutral-8);
+            left: 0;
+            padding: 1rem;
+
+            &.show{
+                display: flex;
+            }
+
+            li{
+                text-align: center;
+
+                a{
+                    color: var(--color-neutral-1);
+                    text-decoration: none;
+                    font-size: 1rem;
+                    font-weight: 500;
+                    transition: all 0.3s ease;
+
+                    &:hover{
+                        color: var(--color-neutral-1);
+                        border-bottom: solid 2px var(--color-neutral-1);
+                    }
+                }
+            }
+        }
+
+        .btn-default{
+            display: none;
+        }
+    }
+}
+
+@media(min-width:769px){
+    header{
+        .navbar{
+            .logo{
+                font-size: 1.5rem;            
+            }
+
+            .btn-mobile{
+                display: none;
+
+            }
+
+            ul{
+                display: flex;
+                flex-direction: row;
+                position: static;
+                gap: 1rem;
+                width: auto;
+                padding: 0;
+                li{
+                    a{
+                        padding: 4px 10px;
+                        border-radius: 8px;
+
+                        &:hover{
+                            color: var(--color-neutral-1);
+                            background-color: var(--color-neutral-1);
+                            color: var(--color-primary-0);
+                            border: none;
+                        }
+                    }
+                }
+            }
+
+            .btn-default{
+                display: block;
+            }
+        }
+    }
+}

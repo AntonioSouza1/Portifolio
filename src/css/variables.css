@@ -1,0 +1,30 @@
+:root {
+
+/* Neutros "Tech" (Tons Frios / Cinza-Azulados) */
+    --color-neutral-0: #FFFFFF;     /* Branco puro */
+    --color-neutral-1: #F1F5F9;     /* Quase branco (fundo de seções claras) */
+    --color-neutral-2: #E2E8F0;     /* Cinza bem claro (texto principal em fundo escuro) */
+    --color-neutral-3: #CBD5E1;     /* Cinza claro (bordas claras, divisórias) */
+    --color-neutral-4: #94A3B8;     /* Cinza médio (texto secundário em fundo escuro) */
+    --color-neutral-5: #64748B;     /* Cinza (ícones, texto de placeholder) */
+    --color-neutral-6: #334155;     /* Cinza escuro (texto principal em fundo claro) */
+    --color-neutral-7: #1E293B;     /* Cinza-azulado (fundo de cards em modo claro) */
+    --color-neutral-8: #0F172A;     /* Quase preto (um ótimo substituto para o azul escuro) */
+    --color-neutral-9: #000000;     /* Preto puro */
+
+    /* Primário: Novo Azul Tech (Baseado na Opção 1) */
+    --color-primary-1: #0A192F; /* Fundo principal escuro */
+    --color-primary-2: #112240; /* Fundo de 'cards', navbar */
+    --color-primary-3: #233554; /* Bordas, linhas, elementos sutis */
+
+    /* Secundário: Amarelo para Destaque (Mantido) */
+    --color-secundary-1: #f5c518; /* Botões, links importantes, ícones */
+
+    /* Acento: Verde (Antigo Primário) */
+    --color-accent-1: #34815d; /* Para tags, badges, ou detalhes específicos */
+    
+    /* Cores de Texto */
+    --color-text-light: #d4c3b6;  /* Seu neutral-2, ótimo para texto principal em fundo escuro */
+    --color-text-dark: #1e0e05;   /* Seu neutral-8, para texto em fundo claro */
+    --color-text-highlight: #f5c518; /* Seu secundário, para títulos */
+}

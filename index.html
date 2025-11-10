@@ -3,58 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site em Manutenção</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            text-align: center;
-            padding: 50px;
-            margin: 0;
-        }
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            background: white;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            border-top: 5px solid #000dff;
-        }
-        h1 {
-            color: #000dff;
-        }
-        p {
-            font-size: 18px;
-            margin-bottom: 20px;
-        }
-        .icon {
-            font-size: 50px;
-            margin-bottom: 20px;
-        }
-        footer {
-            margin-top: 30px;
-            font-size: 14px;
-            color: #666;
-        }
-        a {
-            color: #000dff;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/manutencao.css">
+    <title>Portifolio</title>
 </head>
 <body>
-    <div class="container">
-        <div class="icon">🔧</div>
-        <h1>Site em Manutenção</h1>
-        <p>Estamos trabalhando para melhorar o nosso site. Volte em breve!</p>
-        <footer>
-            <p>Contato: <a href="mailto:souzaantonio4020@gmail.com">souzaantonio4020@gmail.com</a></p>
-        </footer>
-    </div>
+    <!-- Header-->
+    <header>
+        <nav class="navbar">
+            <a href="/" class="logo">Antonio <strong>Souza</strong></a>
+
+            <button class="btn btn-mobile">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <ul id="nav-links">
+
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+
+                <li>
+                    <a href="#about_me">Sobre mim</a>
+                </li>
+
+                <li>
+                    <a href="#projects">Projetos</a>
+                </li>
+            
+            </ul>
+
+            <a href="tel:+5511986459547" class="btn btn-default">
+                Contatar
+            </a>
+
+        </nav>
+    </header>
+
+    <!-- Main -->
+     <main id="container">
+        <section id="home">
+            <div class="manutencao">
+                <h1>Site em Manutenção</h1>
+                <p>Estamos trabalhando para melhorar o nosso site. Volte em breve!</p>
+                <footer>
+                    <p>Contato: <a href="mailto:souzaantonio4020@gmail.com">souzaantonio4020@gmail.com</a></p>
+                </footer>
+            </div>
+
+            <h1 class="home-title">
+                Antonio 
+                <span>Souza</span>
+            </h1>
+
+            <p class="home-description">
+                desenvolvedor Web
+            </p>
+        </section>
+     </main>
+    <script src="src/js/script.js"></script>
 </body>
 </html>
