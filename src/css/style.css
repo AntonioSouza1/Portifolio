@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url(variables.css);
 @import url(header.css);
+@import url(main.css);
 
 *{
     margin: 0;
@@ -45,20 +46,73 @@ a.btn{
 
 #container{
 
-    #home{
+    .home{
         display: flex;
-        flex-direction: column;
-        gap: 12px;
+        flex-direction: column-reverse;
+        gap: 30px;
         align-items: center;
         justify-content: center;
         min-height: calc(100vh - 50px);
+        margin: 0 30px;
+        padding-top: clamp(0px, 5vw, 32px);
 
-        h1{
-            font-size: 3rem;
-            text-align: center;
+        .home-title{
+            height: 100%;
+            max-width: 1000px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            
 
-            span{
-                color: var(--color-text-highlight);
+            h1{
+                font-size: clamp(3rem, 8vw, 7rem);
+                text-align: center;
+
+                span{
+                    color: var(--color-text-highlight);
+                }
+            }
+
+            p{
+                font-size: clamp(1rem, 5vw, 1.3rem);
+                text-align: center;
+            }
+        }
+
+        .home-img{
+            img{
+                width: clamp(270px, 50vw, 800px);
+                height: clamp(270px, 50vw, 800px);
+                object-fit: cover;
+                border-radius: 50%;
+                border: 8px solid var(--color-primary-1);
+                box-shadow: 0 0 20px 10px var(--color-primary-1);
+            }
+        }
+    }
+}
+
+@media(min-width:769px){
+    #container{
+
+        .home{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            
+            .home-title{
+                align-items: flex-start;
+                gap: 12px;
+                
+                h1{
+                    text-align: start;
+                }
+
+                p{
+                    text-align: start;
+                    font-size: 1.5rem;
+                }
             }
         }
     }
