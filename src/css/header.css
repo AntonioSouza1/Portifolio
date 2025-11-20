@@ -13,9 +13,21 @@ header{
         height: 50px;
         
         .logo{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
             width: auto;
             font-size: 1.3rem;
-            color: var(--color-neutral-1);            
+            color: var(--color-neutral-1);
+
+            h3{
+                font-weight: 400;
+            }
+
+            i{
+                font-size: 1.7rem;
+            }
         }
 
         ul{
