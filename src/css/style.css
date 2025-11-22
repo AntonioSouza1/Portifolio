@@ -107,8 +107,8 @@ a.btn{
         min-height: calc(100vh - 74px);
 
         .about-img img{
-            width: 100px;
-            height: 100px;
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
             border: 5px solid var(--color-primary-1);
             object-fit: cover;
@@ -126,6 +126,43 @@ a.btn{
             p {
                 font-size: clamp(0.9rem, 5vw, 1.2rem);
                 text-align: center;
+            }
+        }
+
+        .skills-title {
+            font-size: clamp(1rem, 8vw, 2rem);
+            color: var(--color-primary-1);
+            margin: 10px 0;
+        }
+
+        .skills-container {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+
+            .skills-item{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                width: 350px;
+                color: var(--color-primary-1);
+
+                .skills-progress {
+                    flex-wrap: nowrap;
+
+                    i{
+                        font-size: clamp(0.8rem, 6vw, 3rem);
+                        color: var(--color-primary-1);
+                    }
+                }
+
+
             }
         }
     }
@@ -179,6 +216,7 @@ a.btn{
             .about-info{
                 width: 80%;
             }
+
         }
     }
 }
