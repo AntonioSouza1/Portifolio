@@ -103,7 +103,6 @@ a.btn{
         align-items: center;
         justify-content: start;
         scroll-margin-top: 74px;
-        padding-top: clamp(0px, 5vw, 32px);
         min-height: calc(100vh - 74px);
 
         .about-img img{
@@ -174,7 +173,6 @@ a.btn{
         justify-content: start;
         scroll-margin-top: 74px;
         gap: 20px;
-        padding-top: clamp(0px, 5vw, 32px);
         min-height: calc(100vh - 74px);
 
         .projects-title{
@@ -192,7 +190,7 @@ a.btn{
             flex-wrap: wrap;
             align-items: center;
             justify-content: center;
-            gap: 20px;
+            gap: 30px;
 
             .projects-item {
                 display: flex;
@@ -201,10 +199,19 @@ a.btn{
                 justify-content: center;
                 padding: 15px;
                 width: 280px;
+                height: 380px;
                 gap: 10px;
                 border-radius: 10px;
+                overflow: hidden;
+                border: 1px solid var(--color-primary-1);
                 background-color: var(--color-neutral-0);
                 box-shadow: 1px 1px 10px var(--color-primary-1) ;
+                transition: all 0.3s ease;
+
+                &:hover{
+                    transform: scale(1.03);
+                    box-shadow: 2px 2px 15px var(--color-primary-1) ;
+                }
 
                 h1{
                     text-align: start;
@@ -220,10 +227,43 @@ a.btn{
                 }
 
                 img{
-                    width: 260px;
-                    height: 300px;
+                    height: 200px;
+                    width: auto;
                     object-fit: cover;
                     border-radius: 10px;
+                }
+            }
+        }
+    }
+
+    .techs{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        min-height: calc(100vh - 74px);
+        scroll-margin-top: 74px;
+
+        .tech{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+
+            h1{
+                font-size: clamp(0.8rem, 8vw, 1.8rem);
+            }
+
+            .tech-items{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 30px;
+
+                i{
+                    font-size: clamp(5rem, 6vw, 10rem);
                 }
             }
         }
@@ -265,6 +305,14 @@ a.btn{
                 width: 80%;
             }
 
+        }
+
+        .techs{
+            .tech{
+                .tech-items{
+                    flex-direction: row;
+                }
+            }
         }
     }
 }
