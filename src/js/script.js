@@ -7,3 +7,4 @@ mobileBtn.addEventListener('click', () => {
     icon.classList.toggle('fa-times')
     icon.classList.toggle('fa-bars')
 })
+
