@@ -95,9 +95,8 @@ header{
                         border-radius: 8px;
 
                         &:hover{
-                            color: var(--color-neutral-1);
                             background-color: var(--color-neutral-1);
-                            color: var(--color-primary-0);
+                            color: var(--color-primary-1);
                             border: none;
                         }
                     }

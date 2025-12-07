@@ -176,7 +176,7 @@
 
              <div class="projects-container">
                  <div class="projects-item">
-                     <img src="src/img/project-portifolio.png" alt="tela de login">
+                     <img src="src/img/project-portifolio.png" alt="Portifólio">
                      <h2>Portifólio</h2>
                      <p>Meu portifolio</p>
                      <a href="" class="btn btn-default">GitHub</a>
@@ -190,7 +190,7 @@
                  </div>
 
                  <div class="projects-item">
-                     <img src="src/img/" alt="tela de login">
+                     <img src="src/img/DjangoFinace.png" alt="Django Finance">
                      <h2>Django Finance</h2>
                      <p>Sistema para controle financeiro pessoal</p>
                      <a href="" class="btn btn-default">GitHub</a>
@@ -212,7 +212,7 @@
 
              <div class="tech">
                  <h1>Já Utilizadas</h1>
-                 <div class="tech-items">
+                 <div class="tech-itens">
                      <i class="fa-brands fa-python"></i>
                      <i class="fa-brands fa-html5"></i>
                      <i class="fa-brands fa-css3"></i>
@@ -221,18 +221,53 @@
 
              <div class="tech">
                  <h1>Em Desenvolvimento</h1>
-                 <div class="tech-items">
+                 <div class="tech-itens">
                      <i class="fa-brands fa-node-js"></i>
                      <i class="fa-solid fa-database"></i>
                      <i class="fa-solid fa-server"></i>
                  </div>
              </div>
          </section>
-
-         <section class="contact" id="contact">
-             <h1>Contatos</h1>
-         </section>
      </main>
+
+    <footer class="contact" id="contact">
+        <h1>Contato</h1>
+        <div class="contact-container">
+            <div class="contact-svg">
+                <img src="src/img/Contact-us-bro.svg" alt="svg-contato">
+            </div>
+
+            <div class="contact-form">
+                <form id="contact_form">
+                    <div class="form-item">
+                        <label for="name">Nome</label>
+                        <input type="text" name="name" id="name" placeholder="Digite seu nome">
+                        <span id="erro_name" style="color: red;"></span>
+                    </div>
+
+                    <div class="form-item">
+                        <label for="mail">E-Mail</label>
+                        <input type="text" name="mail" id="mail" placeholder="Digite seu E-Mail">
+                        <span id="erro_mail" style="color: red;"></span>
+                    </div>
+
+                    <div class="form-item">
+                        <label for="tel">Telefone</label>
+                        <input type="tel" name="tel" id="tel" placeholder="Digite seu telefone">
+                        <span id="erro_tel" style="color: red;"></span>
+                    </div>
+
+                    <div class="form-item">
+                        <label for="message">Mensagem</label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
+                        <span id="erro_message" style="color: red;"></span>
+                    </div>
+
+                    <input type="submit" value="Enviar" id="button_submit">
+                </form>
+            </div>
+        </div>
+    </footer>
     <script src="src/js/script.js"></script>
 </body>
 </html>
